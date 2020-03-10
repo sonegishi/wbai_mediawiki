@@ -60,6 +60,6 @@ class Circuit:
             elements.append(f'transmitter={self.transmitter}')
 
         if self.uniform:
-            return f'{{UniformCircuit|{separator.join(elements)}}}'
+            return '{{UniformCircuit|' + separator.join(elements) + '}}'
         elif not self.uniform:
-            return f'{{Circuit|{separator.join(elements)}}}'
+            return '{{Circuit|' + separator.join(elements) + '}}'
