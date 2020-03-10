@@ -23,7 +23,7 @@ circuit.export_bif()
 
 ### Output
 ```
-{Circuit|names=anterior superior temporal cortex@en|hasParts=None|taxons=None|functionalAnnotation=None|references=None|implementations=None|equivalentTo=TANJI:anterior superior temporal cortex|size=10}
+{{Circuit|names=anterior superior temporal cortex@en|hasParts=None|taxons=None|functionalAnnotation=None|references=None|implementations=None|equivalentTo=TANJI:anterior superior temporal cortex|size=10}}
 ```
 
 ## Contributors
