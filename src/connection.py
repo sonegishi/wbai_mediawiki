@@ -54,4 +54,4 @@ class Connection:
             elements.append(f'references={self.references}')
         if self.implementations:
             elements.append(f'implementations={self.implementations}')
-        return f'{{Connection|{separator.join(elements)}}}'
+        return '{{Connection|' + separator.join(elements) + '}}'
