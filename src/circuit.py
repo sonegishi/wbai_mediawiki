@@ -54,13 +54,12 @@ class Circuit:
             elements.append(f'implementations={self.implementations}')
         if self.equivalent_to:
             elements.append(f'equivalentTo={self.equivalent_to}')
-
-        if self.uniform:
-            return '{{UniformCircuit|' + separator.join(elements) + '}}'
-        elif not self.uniform:
-            return '{{Circuit|' + separator.join(elements) + '}}'
-
         if self.size:
             elements.append(f'size={self.size}')
-#         if self.transmitter:
-#             elements.append(f'transmitter={self.transmitter}')
+        if self.transmitter:
+            elements.append(f'transmitter={self.transmitter}')
+
+        if self.uniform:
+            return f'{{UniformCircuit|{separator.join(elements)}}}'
+        elif not self.uniform:
+            return f'{{Circuit|{separator.join(elements)}}}'
